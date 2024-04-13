@@ -15,9 +15,9 @@ body {
 
 
 body::before {
-    background-image: url("img/code.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
+    background-image: url("./img/fondo.png");
+    background-repeat: repeat;
+    background-position: center;
     content: "";
     display: block;
     position: absolute;
@@ -35,7 +35,7 @@ body::before {
     border-radius: 24px;
     border: 1px solid #0a192b;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url("img/Ruido.png");
+    background-image: url("./img/Ruido.png");
     background-size: 100% 100%;
     position: relative;
 }
@@ -63,6 +63,11 @@ body::before {
     font-weight: 700;
     border: none;
     margin-top: 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.container__boton:hover{
+    background-color: #e81818;
 }
 
 .container__boton:disabled {
@@ -118,4 +123,5 @@ button {
     margin: auto;
     width: 40%;
     padding: 5vh;
+    filter: drop-shadow(#0e0e0f 7px 4px 2px);
 }
